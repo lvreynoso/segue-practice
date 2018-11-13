@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a4O-3V-WuU">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeguesChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ov2-7m-F8q">
+                                <rect key="frame" x="-93" y="114.5" width="600" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Embed me in a NavigationController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T31-Ud-tTa">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qWM-mK-pQ3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noun_Panda_394576" translatesAutoresizingMaskIntoConstraints="NO" id="lYf-UK-hGU">
+                                        <rect key="frame" x="0.0" y="70" width="600" height="527"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2Y-Ue-Gx9">
+                                        <rect key="frame" x="0.0" y="617" width="600" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Isd-7o-N1M"/>
+                                        </constraints>
+                                        <state key="normal" title="NEXT"/>
+                                        <connections>
+                                            <segue destination="JFb-O4-2lc" kind="show" id="v4U-J6-5Cn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="G2Y-Ue-Gx9" firstAttribute="leading" secondItem="ov2-7m-F8q" secondAttribute="leading" id="JOe-9q-TPY"/>
+                                    <constraint firstAttribute="trailing" secondItem="G2Y-Ue-Gx9" secondAttribute="trailing" id="Y8N-Ug-NIg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ov2-7m-F8q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1eO-ky-5t5"/>
+                            <constraint firstItem="ov2-7m-F8q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u34-O6-g8W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n0f-bX-R4W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896.8" y="133.5832083958021"/>
+        </scene>
+        <!--Purple View Controller-->
+        <scene sceneID="qhj-w0-Kxd">
+            <objects>
+                <viewController id="JFb-O4-2lc" customClass="PurpleViewController" customModule="SeguesChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5r-Fy-kSg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HB6-wN-ouo">
+                                <rect key="frame" x="-96" y="52" width="606" height="792"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present me with &quot;show&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ML-1H-v1X">
+                                        <rect key="frame" x="0.0" y="0.0" width="606" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="T3x-24-ZrF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noun_Peacock_394556" translatesAutoresizingMaskIntoConstraints="NO" id="b9c-Bu-baT">
+                                        <rect key="frame" x="0.0" y="60" width="606" height="552"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoA-gE-zvU">
+                                        <rect key="frame" x="0.0" y="622" width="606" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2c0-4X-PPL"/>
+                                        </constraints>
+                                        <state key="normal" title="GO BACK (unwind)">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Dvd-PJ-BnB" kind="unwind" unwindAction="anotherUnwind:" id="mm0-Zl-etg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ib-AX-sxq">
+                                        <rect key="frame" x="0.0" y="682" width="606" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gky-ip-UlT"/>
+                                        </constraints>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="QjG-6z-6EM" kind="presentation" identifier="NextVC" id="pyP-JL-LuU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUu-Tc-FA3">
+                                        <rect key="frame" x="0.0" y="742" width="606" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Rnr-Cb-3W0"/>
+                                        </constraints>
+                                        <state key="normal" title="NEXT (performSegue)">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextVC:" destination="JFb-O4-2lc" eventType="touchUpInside" id="PeY-tP-r3R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bUu-Tc-FA3" secondAttribute="trailing" id="7eJ-SE-A6B"/>
+                                    <constraint firstAttribute="trailing" secondItem="0ML-1H-v1X" secondAttribute="trailing" id="8Mc-cl-YHT"/>
+                                    <constraint firstItem="0ML-1H-v1X" firstAttribute="leading" secondItem="HB6-wN-ouo" secondAttribute="leading" id="LwB-w0-ZBH"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Ib-AX-sxq" secondAttribute="trailing" id="ac4-Tr-w5S"/>
+                                    <constraint firstItem="2Ib-AX-sxq" firstAttribute="leading" secondItem="HB6-wN-ouo" secondAttribute="leading" id="cIh-Er-fDY"/>
+                                    <constraint firstAttribute="trailing" secondItem="RoA-gE-zvU" secondAttribute="trailing" id="ohF-7o-dbJ"/>
+                                    <constraint firstItem="RoA-gE-zvU" firstAttribute="leading" secondItem="HB6-wN-ouo" secondAttribute="leading" id="whw-D3-Hn3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75864190358344563" green="0.4758759436899358" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="HB6-wN-ouo" firstAttribute="centerY" secondItem="v5r-Fy-kSg" secondAttribute="centerY" id="9kt-RB-vTD"/>
+                            <constraint firstItem="HB6-wN-ouo" firstAttribute="centerX" secondItem="v5r-Fy-kSg" secondAttribute="centerX" id="T9Y-fJ-UhO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N8w-tf-8Je"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWQ-6E-jcO" sceneMemberID="firstResponder"/>
+                <exit id="Dvd-PJ-BnB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2703.1999999999998" y="133.5832083958021"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="Ikh-CL-0ru">
+            <objects>
+                <viewController storyboardIdentifier="blueVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QjG-6z-6EM" customClass="BlueViewController" customModule="SeguesChallenge" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X0K-g3-bd7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1KO-ZV-OPO">
+                                <rect key="frame" x="-76.5" y="64.5" width="567" height="767"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present me modally" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L53-uc-UIT">
+                                        <rect key="frame" x="0.0" y="0.0" width="567" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2Nl-2F-1hP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noun_Penguin_394825" translatesAutoresizingMaskIntoConstraints="NO" id="IBo-zt-H4v">
+                                        <rect key="frame" x="0.0" y="70" width="567" height="557"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I received this message:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgX-n4-Nko">
+                                        <rect key="frame" x="0.0" y="647" width="567" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VIg-Kb-Uga"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rad-Nk-gca">
+                                        <rect key="frame" x="0.0" y="717" width="567" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oRI-t6-KF0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="GO BACK">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="FXQ-OY-hD4" kind="unwind" unwindAction="myUnwindAction:" id="Sk3-Na-TN5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="L53-uc-UIT" firstAttribute="leading" secondItem="1KO-ZV-OPO" secondAttribute="leading" id="Av2-tv-45E"/>
+                                    <constraint firstAttribute="trailing" secondItem="L53-uc-UIT" secondAttribute="trailing" id="Con-Nd-VyS"/>
+                                    <constraint firstItem="Rad-Nk-gca" firstAttribute="leading" secondItem="1KO-ZV-OPO" secondAttribute="leading" id="Dbv-Le-awY"/>
+                                    <constraint firstAttribute="trailing" secondItem="cgX-n4-Nko" secondAttribute="trailing" id="Jz0-3f-hlQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rad-Nk-gca" secondAttribute="trailing" id="Wmm-5e-OTF"/>
+                                    <constraint firstItem="cgX-n4-Nko" firstAttribute="leading" secondItem="1KO-ZV-OPO" secondAttribute="leading" id="sz8-w2-sPM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40072877715566313" green="0.71760115596837637" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="1KO-ZV-OPO" firstAttribute="centerY" secondItem="X0K-g3-bd7" secondAttribute="centerY" id="FF5-xf-vyR"/>
+                            <constraint firstItem="1KO-ZV-OPO" firstAttribute="centerX" secondItem="X0K-g3-bd7" secondAttribute="centerX" id="J39-Qm-rwL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SOY-Yr-fio"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="cgX-n4-Nko" id="NMX-mZ-mDy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Dy-Tz-cun" sceneMemberID="firstResponder"/>
+                <exit id="FXQ-OY-hD4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3410.4000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Vb-HF-zup">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a4O-3V-WuU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bxb-oP-M9z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fFp-15-dWu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dD3-Xd-Icz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="noun_Panda_394576" width="600" height="527"/>
+        <image name="noun_Peacock_394556" width="606" height="552"/>
+        <image name="noun_Penguin_394825" width="567" height="557"/>
+    </resources>
+</document>
